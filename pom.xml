@@ -36,8 +36,17 @@
           <artifactId>maven-clean-plugin</artifactId>
           <version>3.1.0</version>
         </plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+ 	<artifactId>maven-war-plugin</artifactId>
+ 	<version>2.6</version>
+ 	<configuration>
+ 		<failOnMissingWebXml>false</failOnMissingWebXml>
+ 	</configuration>
+ </plugin>
+        
         <!-- default lifecycle, jar packaging: see https://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->
         <plugin>
+          
           <artifactId>maven-resources-plugin</artifactId>
           <version>3.0.2</version>
         </plugin>
@@ -49,10 +58,10 @@
           <artifactId>maven-surefire-plugin</artifactId>
           <version>2.22.1</version>
         </plugin>
-        <plugin>
-          <artifactId>maven-war-plugin</artifactId>
+       <!-- <plugin>
+          <artifactId>maven-jar-plugin</artifactId>
           <version>3.0.2</version>
-        </plugin>
+        </plugin> -->
         <plugin>
           <artifactId>maven-install-plugin</artifactId>
           <version>2.5.2</version>
